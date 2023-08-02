@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto_william</title>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'test.css' %}">
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <center>
+        <tr><h1 style="color: rgb(255, 255, 255);">Opções</h1></tr>
+        </center>
+    <div class="container">
+        
+            
+            {% csrf_token %}
+        <div class="search">
+            <a href="http://127.0.0.1:8000/procura/">
+                <input type="submit" value=" Cadastre-se">
+            </a>
+            <a href="http://127.0.0.1:8000/registros/">
+                <input type="submit" value="  Cadastrados">
+            </a>
+                <div class="list">
+                </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

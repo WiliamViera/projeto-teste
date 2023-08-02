@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Registros</title>
+  </head>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'test.css' %}">
+  
+  <table class="table table-bordered table-striped">
+        <tr>
+            <th style="color: aliceblue;">ID</th>
+            <th style="color: aliceblue;">Nome</th>
+            <th style="color: aliceblue;">Idade</th>
+            <th style="color: aliceblue;">Estado</th>
+
+        </tr>
+        {% for usuario in usuarios %}
+        <tr>
+            <td style="color: aliceblue;">{{usuario.id_usuario}}</td>
+            <td style="color: aliceblue;">{{usuario.nome}}</td>
+            <td style="color: aliceblue;">{{usuario.idade}}</td>
+            <td style="color: aliceblue;">{{usuario.estado}}</td>
+        </tr>
+        {% endfor %}
+        <div class="carousel-caption">
+          <h3>
+            <a href="http://127.0.0.1:8000/procura/">
+              <button class="border-0, img-thumbnail" >🠔</button>
+            </a>
+
+          </h3>
+
+        </div>
+
+    </table>
+
+</div>
